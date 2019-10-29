@@ -1,0 +1,131 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="actionbar_compat_height">50dp</dimen>
+    <dimen name="actionbar_compat_new_height">45dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin">22dp</dimen>
+    <dimen name="layout_margin">7dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_new">17sp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+
+    <!-- Text Size For DASHBOARD & OLC-->
+    <dimen name="text_small">22sp</dimen>
+    <dimen name="text_normal">24sp</dimen>
+    <dimen name="text_medium">26sp</dimen>
+    <dimen name="text_large">28sp</dimen>
+
+    <dimen name="textsize_title">60sp</dimen>
+
+    <dimen name="splash_screen_title">80sp</dimen>
+
+    <!-- Button Size -->
+    <dimen name="button_height">40dp</dimen>
+
+    <dimen name="control_height">50dp</dimen>
+
+    <dimen name="button_left_margin">100dp</dimen>
+    <dimen name="button_right_margin">100dp</dimen>
+
+    <dimen name="changepassword_btn_left_margin">140dp</dimen>
+    <dimen name="changepassword_btn_right_margin">140dp</dimen>
+
+    <dimen name="signup_left_margin">17dp</dimen>
+    <dimen name="signup_right_margin">17dp</dimen>
+
+    <dimen name="back_btn_width">50dp</dimen>
+    <dimen name="back_btn_height">35dp</dimen>
+
+    <dimen name="menu_btn_width">45dp</dimen>
+    <dimen name="menu_btn_height">45dp</dimen>
+
+    <dimen name="profile_btn_width">100dp</dimen>
+    <dimen name="profile_btn_height">35dp</dimen>
+
+    <dimen name="header_btn_width">80dp</dimen>
+    <dimen name="header_btn_height">40dip</dimen>
+
+    <dimen name="top_margin">50dp</dimen>
+    <dimen name="top_margin_champ_tracker">85dp</dimen>
+
+    <dimen name="top_margin_champ_tracker_listview">125dp</dimen>
+
+    <dimen name="view_height">35dp</dimen>
+
+    <dimen name="barcode_height">30dp</dimen>
+
+    <dimen name="order_listview_top_margin">87dp</dimen>
+
+    <dimen name="multiline_text">80dp</dimen>
+
+    <dimen name="bottom_margin_changestatus">97dp</dimen>
+    <dimen name="bottom_margin_customername">50dp</dimen>
+
+    <dimen name="bottom_margin_signature">60dp</dimen>
+    <dimen name="bottom_margin_takesignature">95dp</dimen>
+    <dimen name="bottom_margin_layoutsignature">45dp</dimen>
+
+    <dimen name="sign_width">110dp</dimen>
+    <dimen name="sign_height">45dp</dimen>
+
+    <dimen name="margin_login_layout">75dp</dimen>
+
+    <dimen name="dashboard_btn_width">187dp</dimen>
+    <dimen name="dashboard_btn_height">236dp</dimen>
+
+    <dimen name="orderlineitemlistview_height">300dp</dimen>
+    <dimen name="orderinvoicelineitemlistview_height">180dp</dimen>
+    <dimen name="orderDetailLineitemlistview_height">375dp</dimen>
+
+    <dimen name="lefthandmenu_width">260dp</dimen>
+
+    <dimen name="product_image_width">270dp</dimen>
+
+    <dimen name="lefthandmenu_margin">10dp</dimen>
+
+    <dimen name="wall_message_topmargin">110dp</dimen>
+
+    <dimen name="cartonslistview_height">420dp</dimen>
+
+    <dimen name="signview_height">430dp</dimen>
+
+    <dimen name="new_custom_row_height">200dp</dimen>
+
+    <dimen name="small_control_height">30dp</dimen>
+
+    <dimen name="large_control_height">115dp</dimen>
+
+    <dimen name="new_control_height">90dp</dimen>
+
+    <dimen name="start_picking_btn_width">300dp</dimen>
+
+    <dimen name="bin_top_margin">68dp</dimen>
+
+    <dimen name="product_listview_top_margin">135dp</dimen>
+
+    <dimen name="product_listview_height">630dp</dimen>
+
+    <dimen name="product_row_height">600dp</dimen>
+
+    <dimen name="length_03_width">45dp</dimen>
+
+    <dimen name="length_24_width">60dp</dimen>
+
+    <dimen name="length_35_width">75dp</dimen>
+
+    <dimen name="length_46_width">90dp</dimen>
+
+    <dimen name="length_57_width">105dp</dimen>
+
+    <dimen name="custom_imageview_height">450dp</dimen>
+
+    <dimen name="margin_menu_layout">60dp</dimen>
+</resources>

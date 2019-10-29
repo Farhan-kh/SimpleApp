@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color">
+
+    <include
+        android:id="@+id/layHeader"
+        layout="@layout/header_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_compat_height" />
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/bin_top_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/pickBinEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight=".100"
+                android:background="@color/notificationColor"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/binMessage"
+                android:imeOptions="actionDone"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_pink"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="normal" />
+
+            <requestFocus />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/itemListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:divider="@color/text_white"
+            android:dividerHeight="2dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+</RelativeLayout>

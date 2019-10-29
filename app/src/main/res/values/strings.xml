@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- appName -->
+    <string name="app_name">eWMS Picking</string>
+
+    <!-- Remember -->
+    <string name="rememberMe">Remember me</string>
+
+    <!-- email -->
+    <string name="mail">Email</string>
+
+    <!-- password -->
+    <string name="pass">Password</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+
+    <!-- Back -->
+    <string name="back">Back</string>
+
+    <!-- ORDER -->
+    <string name="orderNo">ORDER #</string>
+
+    <!-- CARRIER -->
+    <string name="carrier">CARRIER</string>
+
+    <!-- UNITS -->
+    <string name="unit">UNITS</string>
+
+    <!-- DELIVERY ON -->
+    <string name="deliveryOn">DELIVERY ON</string>
+
+    <!-- TYPE -->
+    <string name="type">TYPE</string>
+
+    <!-- Logout -->
+    <string name="logout">Logout</string>
+
+    <!-- HEADER TEXT -->
+    <string name="header_text">HEADER TEXT</string>
+
+    <!-- SKU -->
+    <string name="sku">SKU</string>
+
+    <!-- Product -->
+    <string name="product">PRODUCT</string>
+
+    <!-- QTY -->
+    <string name="qty">QTY</string>
+
+    <!-- Shelf -->
+    <string name="shelf">SHELF</string>
+
+    <!-- STATUS -->
+    <string name="status">STATUS</string>
+
+    <!-- PICK -->
+    <string name="pick">Confirm</string>
+
+    <!-- SKIP -->
+    <string name="skip">Skip Order</string>
+
+    <!-- Partial Pick -->
+    <string name="partialPick">Partial Pick</string>
+
+    <!-- Bin Number -->
+    <string name="binMessage">Enter / Scan Pick Bin</string>
+
+    <!-- Click here -->
+    <string name="clickMe">Click here</string>
+
+    <!-- Product -->
+    <string name="productName">Product Name</string>
+
+    <!-- SKU -->
+    <string name="productSKU">SKU</string>
+
+    <!-- UPC -->
+    <string name="productUPC">UPC</string>
+
+    <!-- Location -->
+    <string name="productLocation">Location</string>
+
+    <!-- batchNo -->
+    <string name="batchNo">Batch No</string>
+
+    <!-- expiryDate -->
+    <string name="expiryDate">Expiry Date</string>
+
+    <!-- Quantity -->
+    <string name="productQty">Order Qty</string>
+
+    <!-- Seller Name -->
+    <string name="seller">COMPANY</string>
+
+    <!-- hint for USN -->
+    <string name="hintUSN">Enter / Scan USN</string>
+
+    <!-- hint for USN/SN/IMEI -->
+    <string name="hintUSNSNIMEI">Enter / Scan USN/SN/IMEI</string>
+
+    <!-- appTitle -->
+    <string name="appTitle">Picking App</string>
+
+    <!-- Picked Quantity -->
+    <string name="pickedQty">Picked Qty</string>
+
+    <!-- colon -->
+    <string name="colon">:</string>
+
+    <!-- hint for SKU -->
+    <string name="hintSKU">Enter / Scan SKU/UPC</string>
+
+    <!-- tag -->
+    <string name="tag">Powered by Anchanto</string>
+
+    <!-- startPick -->
+    <string name="startPick">Start Pick</string>
+
+    <!-- types -->
+    <string name="types">Type</string>
+
+    <!-- noOfOrders -->
+    <string name="noOfOrders">No. Of Order(s)</string>
+
+    <!-- units -->
+    <string name="units">Units</string>
+
+    <!-- action -->
+    <string name="action">Action</string>
+
+    <!-- hint for PickedQty -->
+    <string name="hintPickedQty">Enter Picked Qty</string>
+
+    <!-- cancel -->
+    <string name="cancel">Cancel</string>
+
+    <!-- failed -->
+    <string name="failed">Failed</string>
+
+    <!-- successful -->
+    <string name="successful">Successful</string>
+
+    <!-- handoverToPacker -->
+    <string name="handoverToPacker">Handover Successful Picked Order</string>
+
+    <!-- packer -->
+    <string name="packer">Packer</string>
+
+    <!-- summaryText -->
+    <string name="summaryText">Order Summary</string>
+
+    <!-- orderNo -->
+    <string name="orderNumber">Order No.</string>
+
+    <!-- profile -->
+    <string name="profile">Profile</string>
+
+    <!-- firstName -->
+    <string name="firstName">First Name</string>
+
+    <!-- lastName -->
+    <string name="lastName">Last Name</string>
+
+    <!-- email -->
+    <string name="email">Email</string>
+
+    <!-- roles -->
+    <string name="roles">Roles</string>
+
+    <!-- total order -->
+    <string name="totalOrder">Total Order</string>
+
+    <!-- total sku -->
+    <string name="totalSKU">Total SKU</string>
+
+    <!-- total units -->
+    <string name="totalUnits">Total Units</string>
+
+    <!-- pName -->
+    <string name="pName">Name</string>
+
+    <!-- Remaining Quantity -->
+    <string name="remainingQty">Remaining Qty</string>
+
+    <!-- pickConfirm -->
+    <string name="pickConfirm">Pick Confirm</string>
+
+</resources>

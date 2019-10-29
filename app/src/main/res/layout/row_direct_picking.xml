@@ -1,0 +1,436 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/directPickingRow"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="@color/text_custom_cell"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_image_index"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblIndex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".09"
+            android:background="@drawable/circular_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="2dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/lblIndexTemp1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".82"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".09"
+            android:background="@drawable/image_border">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/noimage"
+                android:contentDescription="@string/header_text"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutProductName"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProductKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:text="@string/productName"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblProductColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="start|center_vertical"
+            android:padding="3dp"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:scrollbarSize="1dp"
+            android:scrollbarThumbHorizontal="@drawable/scrollbar">
+
+            <TextView
+                android:id="@+id/lblProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_new" />
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutProductSKU"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProductSKUKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/productSKU"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblProductSKUColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center_vertical|start"
+            android:padding="3dp"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:scrollbarSize="1dp"
+            android:scrollbarThumbHorizontal="@drawable/scrollbar">
+
+            <TextView
+                android:id="@+id/lblSKU"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_new" />
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutProductUPC"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProductUPCKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/productUPC"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblProductUPCColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center_vertical|start"
+            android:padding="3dp"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblUPC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutProductShelf"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProductShelfKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/productLocation"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblProductShelfColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center_vertical|start"
+            android:padding="3dp"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:scrollbarSize="1dp"
+            android:scrollbarThumbHorizontal="@drawable/scrollbar">
+
+            <TextView
+                android:id="@+id/lblShelf"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_new" />
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutProductQtyCheckbox"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProductQtyKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/productQty"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblProductQtyColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center_vertical|start"
+            android:padding="3dp"
+            android:text=":"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblQty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".35"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/checkboxStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:button="@drawable/custom_checkbox_design"
+            android:checked="false"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/lblTemperory2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPickedQty"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblPickedQtyKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/pickedQty"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblPickedQtyColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center_vertical|start"
+            android:padding="3dp"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblPickedQty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutUSN"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lblUSNKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="start|center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblUSNColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="start|center_vertical"
+            android:padding="3dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <EditText
+            android:id="@+id/lblUSN"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:background="@color/notificationColor"
+            android:gravity="start|center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>

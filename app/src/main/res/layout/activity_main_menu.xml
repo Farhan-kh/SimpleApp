@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeMenuRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color">
+
+    <include
+        android:id="@+id/layHeader"
+        layout="@layout/header_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_compat_height" />
+
+    <LinearLayout
+        android:id="@+id/homeMenuLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/top_margin"
+        android:background="@color/view_color"
+        android:gravity="start|center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonPickByOrder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_menu_layout"
+            android:layout_marginEnd="@dimen/margin_menu_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_red_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/buttonPartialPickByOrder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_menu_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_menu_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_red_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/buttonRePickByOrder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_menu_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_menu_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_red_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/buttonPickByProducts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_menu_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_menu_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_red_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/buttonPickByLocations"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_menu_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_menu_layout"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_red_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/buttonPickByCategory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/margin_menu_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margin_menu_layout"
+            android:background="@drawable/button_red_background"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+    </LinearLayout>
+</RelativeLayout>

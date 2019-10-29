@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/control_height"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".50"
+        android:background="@drawable/button_red_background"
+        android:text="@string/cancel"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_medium"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".50"
+        android:background="@drawable/button_red_background"
+        android:text="@string/pick"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_medium"
+        tools:ignore="ButtonStyle" />
+
+</LinearLayout>

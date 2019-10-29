@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_gray">#555555</color>
+    <color name="text_custom_cell">#EBF1F1</color>
+    <color name="text_pink">#DE2E69</color>
+    <color name="text_black">#000000</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_blue">#99CCFF</color>
+    <color name="text_red">#FF0000</color>
+    <color name="text_blood_red">#660000</color>
+    <color name="blue_color">#4073b5</color>
+    <color name="view_color">#F9F9F9</color>
+    <color name="emptywallmessage_color">#F43B7B</color>
+    <color name="menu_background_color">#272627</color>
+    <color name="slidemenu_background">#646464</color>
+    <color name="slidemenu_separator">#434343</color>
+    <color name="slidemenu_separator_view">#505050</color>
+    <color name="settingBackgroundColor">#33ccff</color>
+    <color name="notificationColor">#FFE2E2</color>
+    <color name="labelColor">#363636</color>
+    <color name="spinner_background_color">#D3D3D3</color>
+    <color name="todo_seperator_color">#DEE3E3</color>
+    <color name="transparent">#00000000</color>
+    <color name="fba_color">#4FAFC2</color>
+    <color name="text_custom_color">#ECF3F3</color>
+    <color name="text_green">#92D04F</color>
+    <color name="text_color_count">#B1BF95</color>
+    <color name="text_yellow">#FFFF99</color>
+    <color name="light_orange">#FCC000</color>
+    <color name="lavender">#D7E2F3</color>
+    <color name="text_dark_green">#5ec639</color>
+    <color name="text_light_yellow">#ffff4d</color>
+</resources>

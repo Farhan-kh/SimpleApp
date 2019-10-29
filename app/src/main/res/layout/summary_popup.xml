@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/view_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleHeaderPopup"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="@string/summaryText"
+        android:textColor="@color/text_pink"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/headerLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/failedButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            android:background="@drawable/dark_button_border"
+            android:gravity="center"
+            android:text="@string/failed"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/successfulButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            android:background="@drawable/light_button_border"
+            android:gravity="center"
+            android:text="@string/successful"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTotalOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblTotalOrderKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".35"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/totalOrder"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblTotalOrderColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="start|center_vertical"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblTotalOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".62"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTotalSKU"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblTotalSKUKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".35"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/totalSKU"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblTotalSKUColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="start|center_vertical"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblTotalSKU"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".62"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTotalUnits"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblTotalUnitsKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".35"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/totalUnits"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblTotalUnitsColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="start|center_vertical"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_new" />
+
+        <TextView
+            android:id="@+id/lblTotalUnits"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".62"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/orderListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:divider="@color/text_white"
+        android:dividerHeight="2dp"
+        android:scrollingCache="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/todo_seperator_color" />
+
+    <LinearLayout
+        android:id="@+id/handoverLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/handoverToKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".27"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/packer"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/handoverToColon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/colon"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_medium" />
+
+        <Spinner
+            android:id="@+id/handoverTo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:background="@drawable/dropdown"
+            android:gravity="start|center_vertical"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/todo_seperator_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight=".20"
+            android:background="@drawable/button_red_background"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_new"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/dialogButtonConfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight=".80"
+            android:background="@drawable/button_red_background"
+            android:gravity="center"
+            android:text="@string/handoverToPacker"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_new"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

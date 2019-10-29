@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color">
+
+    <include
+        android:id="@+id/layHeader"
+        layout="@layout/header_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_compat_height" />
+
+    <TextView
+        android:id="@+id/wallmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/emptywallmessage_color"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/actionButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/control_height"
+        android:layout_below="@id/wallmessage"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/pickSkipOrdersButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".50"
+            android:background="@drawable/button_red_background"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/checkNewOrdesButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".50"
+            android:background="@drawable/button_red_background"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parentLayoutTodo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/bin_top_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_todolist"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/binNumberEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight=".100"
+                android:background="@color/notificationColor"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/binMessage"
+                android:imeOptions="actionDone"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_pink"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="normal" />
+
+            <requestFocus />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deliveryDateLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/orderDeliveryDate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".85"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Delivery Date : "
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/expressDeliveryImageView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight=".15"
+                android:gravity="center_horizontal|center_vertical"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carrierLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/carrierTextView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".100"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Shipping Carrier : "
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sourceLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sourceTextView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".100"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Source : "
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/orderItemListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:divider="@color/text_white"
+            android:dividerHeight="2dp"
+            android:scrollingCache="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
